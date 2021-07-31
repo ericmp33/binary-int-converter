@@ -1,5 +1,5 @@
 # binary-int-converter🔢💾
-Exercise to practise the "manually" conversion from binary numbers to integer numbers, programmed with Java (build 14.0.2+12).
+I did this converter as an exercise to practise and understand more the convertion from binary numbers to integer numbers (and reverse), programmed with Java (build 14.0.2+12).
 
 - How to run it?🤔<br>
   <a href="https://adoptopenjdk.net/?variant=openjdk16&jvmVariant=hotspot">Get Java☕</a> - build 14.0.2+12 or newer version and execute <a href="https://github.com/ericmp33/binary-int-converter/raw/main/out/artifacts/binary_int_converter_jar/binary-int-converter.jar">the jar</a>.
