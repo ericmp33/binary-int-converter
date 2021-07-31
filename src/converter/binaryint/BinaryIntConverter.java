@@ -1,3 +1,5 @@
+package converter.binaryint;
+
 import java.util.regex.Pattern;
 
 public class BinaryIntConverter {
