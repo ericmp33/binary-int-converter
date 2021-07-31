@@ -1,18 +1,18 @@
 import java.util.regex.Pattern;
 
-public class BinaryIntManualConverter {
+public class BinaryIntConverter {
     public static void main(String[] args) {
         var sc = new java.util.Scanner(System.in);
 
         while (true) {
             System.out.print("> ");
-            String input = sc.nextLine().trim().toLowerCase();
+            String input = sc.nextLine().trim();
             if (input.equals("-1")) break;
 
             boolean validInput = true;
             String output = "";
 
-            if (isValidBinary(input)) output = toInt(input);
+            if (isValidBinary(input)) output = toInt(input) + checkToBinaryBoundaries(input);
             else if (isValidPositiveInt(input)) output = toBinary(Integer.parseInt(input));
             else validInput = false;
 
@@ -20,6 +20,14 @@ public class BinaryIntManualConverter {
 
             if (validInput) System.out.println(output);
             else System.out.println("Unexpected input");
+        }
+    }
+
+    private static String checkToBinaryBoundaries(String input) {
+        try {
+            return "\n" + toBinary(Integer.parseInt(input));
+        } catch (NumberFormatException nfe) {
+            return "";
         }
     }
 
